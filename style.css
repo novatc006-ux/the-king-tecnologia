@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f3f6fb;
+	color: #1a1a1a;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+	background: #050505;
+	color: white;
+	text-align: center;
+	padding: 40px 20px 45px;
+	border-bottom: 5px solid #ffd400;
+}
+
+.logo {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 50%;
+}
+
+header h1 {
+	font-size: 42px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+header p {
+	font-size: 18px;
+	color: #ffd400;
+}
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+	width: 90%;
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 55px 0;
+}
+
+.intro {
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.intro h2 {
+	color: #0756b5;
+	font-size: 34px;
+	margin-bottom: 12px;
+}
+
+.intro p {
+	color: #555;
+	font-size: 17px;
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.producto {
+	background: white;
+	border-radius: 20px;
+	padding: 25px;
+	text-align: center;
+	border-top: 5px solid #0756b5;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+.producto img {
+	width: 100%;
+	max-width: 300px;
+	height: 260px;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 12px;
+}
+
+.producto h3 {
+	color: #0756b5;
+	font-size: 26px;
+	margin-bottom: 8px;
+}
+
+.tipo {
+	color: #555;
+	font-size: 16px;
+	margin-bottom: 18px;
+}
+
+/* =========================
+   CARACTERÍSTICAS
+========================= */
+
+.producto ul {
+	list-style: none;
+	text-align: left;
+	margin: 0 auto 20px;
+	max-width: 330px;
+}
+
+.producto li {
+	font-size: 14px;
+	color: #444;
+	padding: 7px 0;
+	border-bottom: 1px solid #eeeeee;
+	line-height: 1.4;
+}
+
+/* =========================
+   PRECIOS
+========================= */
+
+.precio {
+	font-size: 30px;
+	font-weight: bold;
+	color: #0756b5;
+	margin: 20px 0;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp {
+	display: inline-block;
+	background: #0756b5;
+	color: white;
+	text-decoration: none;
+	border-radius: 9px;
+	padding: 13px 22px;
+	font-size: 15px;
+	font-weight: bold;
+	transition: 0.2s ease;
+}
+
+.whatsapp:hover {
+	background: #ffd400;
+	color: #111;
+	transform: scale(1.04);
+}
+
+/* =========================
+   MAYOREO
+========================= */
+
+.mayoreo {
+	margin-top: 70px;
+	background: #050505;
+	color: white;
+	padding: 45px 30px;
+	border-radius: 22px;
+	text-align: center;
+}
+
+.mayoreo h2 {
+	color: #ffd400;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.mayoreo > p {
+	color: #ddd;
+	margin-bottom: 35px;
+}
+
+.mayoreo-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.mayoreo-grid > div {
+	background: #111;
+	border: 1px solid #333;
+	border-radius: 15px;
+	padding: 22px 15px;
+}
+
+.mayoreo-grid h3 {
+	color: #ffd400;
+	margin-bottom: 15px;
+}
+
+.mayoreo-grid p {
+	color: #ddd;
+	font-size: 14px;
+	margin: 8px 0;
+}
+
+.mayoreo-grid strong {
+	color: white;
+}
+
+.mayoreo-btn {
+	margin-top: 30px;
+	background: #ffd400;
+	color: #111;
+}
+
+.mayoreo-btn:hover {
+	background: white;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+	background: #050505;
+	color: #aaa;
+	text-align: center;
+	padding: 30px 15px;
+	margin-top: 50px;
+	font-size: 14px;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+	header {
+		padding: 30px 15px 35px;
+	}
+
+	.logo {
+		width: 110px;
+		height: 110px;
+		margin-bottom: 15px;
+	}
+
+	header h1 {
+		font-size: 27px;
+		line-height: 1.2;
+	}
+
+	header p {
+		font-size: 15px;
+	}
+
+	main {
+		width: 92%;
+		padding: 40px 0;
+	}
+
+	.intro h2 {
+		font-size: 28px;
+	}
+
+	.intro p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	.productos {
+		grid-template-columns: 1fr;
+		gap: 22px;
+	}
+
+	.producto {
+		padding: 20px 16px 25px;
+	}
+
+	.producto img {
+		height: 230px;
+		max-width: 270px;
+	}
+
+	.producto h3 {
+		font-size: 24px;
+	}
+
+	.producto li {
+		font-size: 14px;
+		padding: 7px 0;
+	}
+
+	.precio {
+		font-size: 28px;
+	}
+
+	.whatsapp {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.mayoreo {
+		margin-top: 45px;
+		padding: 35px 15px;
+	}
+
+	.mayoreo h2 {
+		font-size: 27px;
+	}
+
+	.mayoreo-grid {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+
+	.mayoreo-grid > div {
+		padding: 20px 15px;
+	}
+}
